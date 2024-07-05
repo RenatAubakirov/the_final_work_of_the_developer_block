@@ -1,0 +1,41 @@
+1. Создайте файл "Pets" и добавьте в него список домашних животных:
+cat > Pets.txt <<END
+Собаки
+Кошки
+Хомяки
+END
+2. Создайте файл "PackAnimals" и добавьте в него список вьючных животных:
+cat > PackAnimals.txt <<END
+Лошади
+Верблюды
+Осли
+END
+3. Объедините содержимое файлов "Pets" и "PackAnimals" в один файл "AllAnimals.txt":
+cat Pets.txt PackAnimals.txt > AllAnimals.txt
+4. Просмотрите содержимое файла "AllAnimals.txt":
+cat AllAnimals.txt
+5. Переименование файла "AllAnimals.txt" в "HumanFriends.txt":
+mv AllAnimals.txt HumanFriends.txt
+6. Проверьте, что файл был переименован:
+ls
+7. Создайте новую директорию:
+mkdir AnimalFiles
+8. Переместите файл "HumanFriends.txt" в новую директорию:
+mv HumanFriends.txt AnimalFiles/
+9. Установка MySQL:
+sudo apt update
+sudo apt install wget lsb-release gnupg
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.17-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.17-1_all.deb
+sudo apt update
+sudo apt install mysql-server
+sudo systemctl start mysql
+sudo mysql_secure_installation
+10. Установка deb-пакета:
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt-get install -f
+11. Удалите установленный пакет:
+sudo dpkg -r google-chrome-stable
+
+
