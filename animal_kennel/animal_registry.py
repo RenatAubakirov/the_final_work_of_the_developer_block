@@ -115,7 +115,7 @@ class AnimalRegistry:
             with open(self.filename, 'r', encoding='utf-8') as file:
                 data = json.load(file)
                 if isinstance(data, list):
-                    # Преобразование старого формата в новый
+                    # Преобразование старого форматав новый
                     self.total_animals = len(data)
                     data = {
                         'total_animals': self.total_animals,
@@ -146,3 +146,4 @@ class AnimalRegistry:
         except FileNotFoundError:
             # Если файл не найден, продолжаем без загрузки
             pass
+
