@@ -1,0 +1,28 @@
+[
+    {
+        "class": "Pet",
+        "subclass": "Dog",
+        "name": "Нюша",
+        "birth_date": "2022-10-10",
+        "abilities": "Сидит",
+        "commands": [
+            "Лежать"
+        ]
+    },
+    {
+        "class": "PackAnimal",
+        "subclass": "Horse",
+        "name": "Ника",
+        "birth_date": "2022-12-12",
+        "abilities": "ккеук",
+        "load_capacity": 10.0
+    },
+    {
+        "class": "PackAnimal",
+        "subclass": "Horse",
+        "name": "Ника2",
+        "birth_date": "2011-11-11",
+        "abilities": "Красное ухо",
+        "load_capacity": 23.0
+    }
+]
